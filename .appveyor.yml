@@ -1,4 +1,4 @@
-image: Visual Studio 2015
+image: Ubuntu
 
 init:
   - ps: (Get-NetIPAddress -AddressFamily IPv4 | Where-Object {$_.InterfaceAlias -like 'ethernet*'}).IPAddress
