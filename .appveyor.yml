@@ -1,5 +1,9 @@
 image: Visual Studio 2015
 
+init:
+  - ps: (Get-NetIPAddress -AddressFamily IPv4 | Where-Object {$_.InterfaceAlias -like 'ethernet*'}).IPAddress
+
+
 build_script:
 - ipconfig
 #- timeout 3600
