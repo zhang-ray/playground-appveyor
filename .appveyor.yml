@@ -1,10 +1,8 @@
 image: Visual Studio 2015
 
 build_script:
-- .\scripts\fetch.boost.1.67.0.bat
-- .\scripts\fetch.qt.5.11.1.msvc2015.bat
+- ipconfig
+#- timeout 3600
+- tracert www.google.com
+- tracert www.baidu.com
 
-
-artifacts:
-- path: qt.5.11.1.msvc2015.7z
-- path: boost.1.67.0.7z
